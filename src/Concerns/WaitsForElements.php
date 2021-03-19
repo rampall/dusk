@@ -46,6 +46,16 @@ trait WaitsForElements
         }, $message);
     }
 
+    public function wait($seconds = null)
+    {
+       $message = $this->formatTimeOutMessage('Waited for %s seconds for selector', $seconds);
+
+        return $this->waitUsing($seconds, 100, function () use ($seconds) {
+            sleep($seconds);
+            return true;//$this->resolver->find($selector) || true;
+        }, $message);
+    }
+
     /**
      * Wait for the given selector to be removed.
      *
