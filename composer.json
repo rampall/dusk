@@ -48,7 +48,7 @@
         "branch-alias": {
             "dev-master": "6.x-dev"
         },
-        "laravel": {
+        "rampall": {
             "providers": [
                 "Rampall\\Dusk\\DuskServiceProvider"
             ]
