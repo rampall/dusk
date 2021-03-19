@@ -1,7 +1,11 @@
 {
     "name": "rampall/dusk",
     "description": "Laravel Dusk provides simple end-to-end testing and browser automation.",
-    "keywords": ["laravel", "testing", "webdriver"],
+    "keywords": [
+        "laravel",
+        "testing",
+        "webdriver"
+    ],
     "license": "MIT",
     "authors": [
         {
@@ -46,7 +50,7 @@
         },
         "laravel": {
             "providers": [
-                "Laravel\\Dusk\\DuskServiceProvider"
+                "Rampall\\Dusk\\DuskServiceProvider"
             ]
         }
     },
