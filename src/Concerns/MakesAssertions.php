@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Dusk\Concerns;
+namespace Rampall\Dusk\Concerns;
 
 use Facebook\WebDriver\Exception\NoSuchElementException;
 use Facebook\WebDriver\Remote\RemoteWebElement;

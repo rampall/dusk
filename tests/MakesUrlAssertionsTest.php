@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Dusk\Tests;
+namespace Rampall\Dusk\Tests;
 
-use Laravel\Dusk\Browser;
-use Laravel\Dusk\Tests\Concerns\SwapsUrlGenerator;
+use Rampall\Dusk\Browser;
+use Rampall\Dusk\Tests\Concerns\SwapsUrlGenerator;
 use Mockery as m;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;

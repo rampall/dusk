@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Dusk\Concerns;
+namespace Rampall\Dusk\Concerns;
 
-use Laravel\Dusk\Browser;
+use Rampall\Dusk\Browser;
 use PHPUnit\Framework\Assert as PHPUnit;
 
 trait InteractsWithAuthentication

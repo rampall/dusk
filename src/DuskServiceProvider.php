@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Dusk;
+namespace Rampall\Dusk;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
@@ -21,17 +21,17 @@ class DuskServiceProvider extends ServiceProvider
                 'middleware' => 'web',
             ]), function () {
                 Route::get('/login/{userId}/{guard?}', [
-                    'uses' => 'Laravel\Dusk\Http\Controllers\UserController@login',
+                    'uses' => 'Rampall\Dusk\Http\Controllers\UserController@login',
                     'as' => 'dusk.login',
                 ]);
 
                 Route::get('/logout/{guard?}', [
-                    'uses' => 'Laravel\Dusk\Http\Controllers\UserController@logout',
+                    'uses' => 'Rampall\Dusk\Http\Controllers\UserController@logout',
                     'as' => 'dusk.logout',
                 ]);
 
                 Route::get('/user/{guard?}', [
-                    'uses' => 'Laravel\Dusk\Http\Controllers\UserController@user',
+                    'uses' => 'Rampall\Dusk\Http\Controllers\UserController@user',
                     'as' => 'dusk.user',
                 ]);
             });

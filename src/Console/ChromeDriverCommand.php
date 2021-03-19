@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Dusk\Console;
+namespace Rampall\Dusk\Console;
 
 use Illuminate\Console\Command;
-use Laravel\Dusk\OperatingSystem;
+use Rampall\Dusk\OperatingSystem;
 use Symfony\Component\Process\Process;
 use ZipArchive;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Dusk\Http\Controllers;
+namespace Rampall\Dusk\Http\Controllers;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;

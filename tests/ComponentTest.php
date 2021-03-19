@@ -1,10 +1,10 @@
 <?php
 
-namespace Laravel\Dusk\Tests;
+namespace Rampall\Dusk\Tests;
 
-use Laravel\Dusk\Browser;
-use Laravel\Dusk\Component;
-use Laravel\Dusk\Page;
+use Rampall\Dusk\Browser;
+use Rampall\Dusk\Component;
+use Rampall\Dusk\Page;
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
 use stdClass;

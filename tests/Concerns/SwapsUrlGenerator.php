@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Dusk\Tests\Concerns;
+namespace Rampall\Dusk\Tests\Concerns;
 
 use Illuminate\Container\Container;
 use Illuminate\Http\Request;

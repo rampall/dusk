@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Dusk;
+namespace Rampall\Dusk;
 
 use BadMethodCallException;
 use Closure;
@@ -87,7 +87,7 @@ class Browser
     /**
      * The element resolver instance.
      *
-     * @var \Laravel\Dusk\ElementResolver
+     * @var \Rampall\Dusk\ElementResolver
      */
     public $resolver;
 
@@ -116,7 +116,7 @@ class Browser
      * Create a browser instance.
      *
      * @param  \Facebook\WebDriver\Remote\RemoteWebDriver  $driver
-     * @param  \Laravel\Dusk\ElementResolver  $resolver
+     * @param  \Rampall\Dusk\ElementResolver  $resolver
      * @return void
      */
     public function __construct($driver, $resolver = null)
@@ -536,8 +536,8 @@ class Browser
     /**
      * Set the current component state.
      *
-     * @param  \Laravel\Dusk\Component  $component
-     * @param  \Laravel\Dusk\ElementResolver  $parentResolver
+     * @param  \Rampall\Dusk\Component  $component
+     * @param  \Rampall\Dusk\ElementResolver  $parentResolver
      * @return void
      */
     public function onComponent($component, $parentResolver)

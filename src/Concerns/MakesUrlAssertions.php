@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Dusk\Concerns;
+namespace Rampall\Dusk\Concerns;
 
 use Illuminate\Support\Arr;
 use PHPUnit\Framework\Assert as PHPUnit;

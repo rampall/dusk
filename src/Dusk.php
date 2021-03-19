@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Dusk;
+namespace Rampall\Dusk;
 
 use InvalidArgumentException;
 

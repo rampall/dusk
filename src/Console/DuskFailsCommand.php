@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Dusk\Console;
+namespace Rampall\Dusk\Console;
 
 class DuskFailsCommand extends DuskCommand
 {
@@ -9,7 +9,7 @@ class DuskFailsCommand extends DuskCommand
      *
      * @var string
      */
-    protected $signature = 'dusk:fails 
+    protected $signature = 'dusk:fails
                 {--browse : Open a browser instead of using headless mode}
                 {--without-tty : Disable output to TTY}';
 

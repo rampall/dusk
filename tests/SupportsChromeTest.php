@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Dusk\Tests;
+namespace Rampall\Dusk\Tests;
 
-use Laravel\Dusk\Chrome\SupportsChrome;
-use Laravel\Dusk\DuskServiceProvider;
+use Rampall\Dusk\Chrome\SupportsChrome;
+use Rampall\Dusk\DuskServiceProvider;
 use Orchestra\Testbench\TestCase;
 
 class SupportsChromeTest extends TestCase

@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Dusk\Concerns;
+namespace Rampall\Dusk\Concerns;
 
 use Carbon\Carbon;
 use Closure;
@@ -48,7 +48,7 @@ trait WaitsForElements
 
     public function wait($seconds = null)
     {
-       $message = $this->formatTimeOutMessage('Waited for %s seconds for selector', $seconds);
+        $message = $this->formatTimeOutMessage('Waited for %s seconds for selector', $seconds);
 
         return $this->waitUsing($seconds, 100, function () use ($seconds) {
             sleep($seconds);
@@ -260,7 +260,8 @@ trait WaitsForElements
         $seconds = is_null($seconds) ? static::$waitSeconds : $seconds;
 
         $this->driver->wait($seconds, 100)->until(
-            WebDriverExpectedCondition::alertIsPresent(), "Waited {$seconds} seconds for dialog."
+            WebDriverExpectedCondition::alertIsPresent(),
+            "Waited {$seconds} seconds for dialog."
         );
 
         return $this;
@@ -319,7 +320,8 @@ trait WaitsForElements
             }
 
             if ($started->lt(Carbon::now()->subSeconds($seconds))) {
-                throw new TimeOutException($message
+                throw new TimeOutException(
+                    $message
                     ? sprintf($message, $seconds)
                     : "Waited {$seconds} seconds for callback."
                 );

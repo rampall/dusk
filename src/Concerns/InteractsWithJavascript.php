@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Dusk\Concerns;
+namespace Rampall\Dusk\Concerns;
 
 trait InteractsWithJavascript
 {
